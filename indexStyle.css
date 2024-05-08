@@ -1,0 +1,395 @@
+body {
+    height: 400vh;
+    margin: 0;
+    padding: 0;
+    background-color: #9ed5cf;
+    font-family: sans-serif;
+}
+
+/* header*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 5px;
+}
+
+#logo {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.link a {
+    text-decoration: none;
+    color: #9ed5cf;
+    font-size: 25px;
+    margin: 10px;
+    padding-left: 5px;
+}
+
+/* hero-image */
+.heroImage {
+    display: flex;
+    flex-direction: column;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(images/istockphoto-1412983082-612x612.jpg);
+    height: 20%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.heroText {
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.heroText h2 {
+    font-family: Dancing Script;
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px auto;
+    animation: fromleft 3s;
+}
+
+.heroText h1 {
+    font-family: sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    margin: 10px 0px 100px 0px;
+    animation: fromright 3s;
+}
+
+.heroText button {
+    background: none;
+    border: solid #a8d4cf;
+    color: #68cfcf;
+    border-radius: 30px;
+    width: 50%;
+    padding: 20px 10px;
+    font-size: 30px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.heroText button:hover {
+    background-color: azure;
+}
+
+@keyframes fromleft {
+    0% {
+        transform: translateX(-400px);
+    }
+}
+
+@keyframes fromright {
+    0% {
+        transform: translateX(200px);
+    }
+}
+
+/* om Oss */
+.omOss {
+    display: flex;
+    flex-direction: row;
+    height: 7%;
+    width: 80%;
+    justify-content: center;
+    margin: 40px auto;
+    gap: 100px;
+    border: solid #68cfcf;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.omOss img {
+    height: 100%;
+    border-radius: 30px;
+}
+
+.omOssText {
+    color: #11496b;
+}
+
+.omOssText h3 {
+    font-family: Dancing Script;
+    font-size: 1.3rem;
+}
+
+.omOss p {
+    margin: 10px 0;
+}
+
+.omOss button {
+    text-align: center;
+    width: 100px;
+    font-size: 1.1rem;
+    color: #11496b;
+    border-radius: 10px;
+    border: #68cfcf solid;
+}
+
+/* services */
+.serviceHero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(images/istockphoto-1412983082-612x612.jpg);
+    height: 30%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    width: 100%;
+    color: #68cfcf;
+    display: grid;
+    grid-template-areas:
+        'h2 h2 h2'
+        'service1 service2 service3'
+        'service4 service5 service6';
+    grid-template-columns: repeat(3, 20%);
+    grid-template-rows: 50px 1fr 1fr;
+    gap: 20px 40px;
+    justify-content: center;
+    align-content: center;
+}
+
+.serviceHero h2 {
+    grid-area: h2;
+}
+
+.servicText,
+.service1 img,
+.service2 img,
+.service3 img,
+.service4 img,
+.service5 img,
+.service6 img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.service1 {
+    grid-area: service1;
+    border: solid #68cfcf;
+    border-radius: 30px;
+}
+
+.service2 {
+    grid-area: service2;
+    border: solid #68cfcf;
+    border-radius: 30px;
+}
+
+.service3 {
+    grid-area: service3;
+    border: solid #68cfcf;
+    border-radius: 30px;
+}
+
+.service4 {
+    grid-area: service4;
+    border: solid #68cfcf;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.service5 {
+    grid-area: service5;
+    border: solid #68cfcf;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.service6 {
+    grid-area: service6;
+    border: solid #68cfcf;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+/* booking time */
+.booking {
+    height: 20%;
+    border: solid #a8d4cf;
+    width: 70%;
+    justify-content: center;
+    margin: 70px auto;
+    gap: 100px;
+    border: solid #68cfcf;
+    border-radius: 30px;
+    padding: 20px;
+    color: #11496b;
+    padding: 0px 50px 50px 50px;
+    font-size: 1.5rem;
+}
+
+.booking h1 {
+    animation: pulsate 3s ease-out infinite;
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 0.3;
+    }
+
+    30%,
+    70% {
+        opacity: 1.0;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100%{
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+} 
+.booking label {
+    margin: 30px;
+}
+
+.booking input {
+    border: solid #68cfcf;
+    border-radius: 30px;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    width: 50%;
+}
+
+.booking select {
+    border: solid #68cfcf;
+    border-radius: 30px;
+    /* height: 55px; */
+    margin: 15px;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    width: 50%;
+}
+
+.booking div {
+    margin-top: 25px;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    height: 50px;
+}
+
+/* footer */
+footer {
+    display: grid;
+    grid-template-areas:
+        'link1 link2 link3'
+        'link4 link5 link6'
+        'link7 link8 link9'
+        'socialaMedier socialaMedier socialaMedier'
+        'websitesLinks websitesLinks websitesLinks';
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 14% 13% 13% 40% 20%;
+    height: 14%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    background-color: #9bcdf1;
+}
+
+footer .link1 {
+    grid-area: link1;
+}
+
+footer .link2 {
+    grid-area: link2;
+}
+
+footer .link3 {
+    grid-area: link3;
+}
+
+footer .link4 {
+    grid-area: link4;
+}
+
+footer .link5 {
+    grid-area: link5;
+}
+
+footer .link6 {
+    grid-area: link6;
+}
+
+footer .link7 {
+    grid-area: link7;
+}
+
+footer .link8 {
+    grid-area: link8;
+}
+
+footer .link9 {
+    grid-area: link9;
+}
+
+.socialaMedier {
+    grid-area: socialaMedier;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 2px #0e6064;
+    height: 100%;
+}
+
+.socialaMedier div {
+    display: flex;
+    flex-direction: column;
+}
+
+.websitesLinks {
+    grid-area: websitesLinks;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border-top: solid 2px #0e6064;
+}
+
+footer a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.socialaMedier {
+    display: flex;
+    flex-direction: row;
+}

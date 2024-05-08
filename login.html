@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in städfirma</title>
+    <link rel="stylesheet" href="logInStyle.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="images/attachment_16479522.png" alt="städfirma logo"></a>
+        <div class="link">
+            <a href="index.html">hemma</a>
+            <a href="#" target="_blank">partners</a>
+            <a href="#" target="_blank">english</a>
+            <a href="#" target="_blank">jobba hos oss</a>
+        </div>
+    </header>
+    <form action="loginOutput.html" method="get">
+        <div class="login">
+            <h1>Har du ett konto?</h1>
+            <div>
+                <label for="name1">Förnamn</label>
+                <br><input type="text" name="Förnamn" id="name1" placeholder="skriv ditt förnamn" required>
+            </div>
+            <div>
+                <label for="lastName1">Efternamn</label>
+                <br><input type="text" name="Efternamn" id="lastName1" placeholder="skriv ditt efternamn" required>
+            </div>
+            <div>
+                <label for="memberType1">Logga in som en </label>
+                <br><select name="Medlemtyp" id="memberType1" required>
+                    <option disabled selected value="">Välj...</option>
+                    <option value="Kund">Kund</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </div>
+            <div>
+                <label for="customerType1">Kundtyp</label>
+                <br><select name="Kundtyp" id="customerType1" required>
+                    <option disabled selected value="">Välj...</option>
+                    <option value="företagskund">företagskund</option>
+                    <option value="privatkund">privatkund</option>
+                </select>
+            </div>
+            <div>
+                <label for="password1">Lösenord</label>
+                <br><input type="password" name="Lösenord" id="password1" placeholder="minst 10 tecken" minlength="10" required >
+            </div>
+            <div class="input">
+                <input type="submit" value="Logga in">
+                <input type="reset" value="Återställa">
+            </div>
+        </div>
+    </form>
+    <form action="loginOutput.html" method="get">
+        <div class="signup">
+            <h1>Skapa ett konto!</h1>
+            <div>
+                <label for="name2">Förnamn</label>
+                <br><input type="text" name="Förnamn" id="name2" placeholder="Skriv ditt förnamn" required>
+            </div>
+            <div>
+                <label for="lastName2">Efternamn</label>
+                <br><input type="text" name="Efternamn" id="lastName2" placeholder="Skriv ditt efternamn" required>
+            </div>
+            <div>
+                <label for="memberType2">Bli medlem som en </label>
+                <br>
+                <select name="Medlemtyp" id="memberType2" required>
+                    <option disabled selected value="">Välj...</option>
+                    <option value="Kund">Kund</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </div>
+            <div>
+                <label for="customerType2">Kundtyp</label>
+                <br>
+                <select name="Kundtyp" id="customerType2" required>
+                    <option disabled selected value="">Välj...</option>
+                    <option value="Företagskund">företagskund</option>
+                    <option value="Privatkund">privatkund</option>
+                </select>
+            </div>
+            <div>
+                <label for="password2">Välj dit lösenord</label>
+                <br> <input type="password" name="Password" id="password2" placeholder="minst 10 tecken" minlength="10" required>
+            </div>
+            <div>
+                <label for="password3">Upprepaa dit lösenord</label>
+                <br><input type="password" name="Password" id="password3" placeholder="minst 10 tecken" minlength="10" required>
+            </div>
+            <div class="input">
+                <input type="submit" value="Skapa konto">
+                <input type="reset" value="Återställa">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
